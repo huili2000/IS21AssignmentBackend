@@ -23,15 +23,15 @@ drop table if exists paints;
 
 CREATE TABLE IF NOT EXISTS paints (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
-  color TEXT CHECK (color IN ('blue', 'grey', 'black', 'white', 'purle')) NOT NULL UNIQUE,
+  color TEXT CHECK (color IN ('blue', 'grey', 'black', 'white', 'purple')) NOT NULL UNIQUE,
   quantity INTEGER NOT NULL
 );
 
 # populate the paints table with the colors
-insert into paints values (1, 'blue', 100);
+insert into paints values (1, 'blue', 10);
 insert into paints values (2, 'grey', 100);
-insert into paints values (3, 'black', 100);
-insert into paints values (4, 'white', 100);
-insert into paints values (5, 'purle', 100);
+insert into paints values (3, 'black', 25);
+insert into paints values (4, 'white', 0);
+insert into paints values (5, 'purple', 75);
 
 EOS
